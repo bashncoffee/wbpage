@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Kolasa - Portfolio & CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="tool-bar">
+        <div class="nav-container">
+            <span class="nav-logo">DK</span>
+            <div class="nav-buttons">
+                <button onclick="toggleDarkMode()" title="Tryb Ciemny">🌓</button>
+                <button onclick="toggleLang()" title="Zmień Język">PL/EN</button>
+                <button onclick="window.print()" title="Drukuj PDF">🖨️</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <h1>Daniel Kolasa</h1>
+        <p class="headline">Treasury Analyst & Automation Specialist</p>
+        <div class="contact-info">
+            <p>📍 Poznań, Poland</p>
+            <p>📧 <a href="mailto:daniel.kolasa@icloud.com">daniel.kolasa@icloud.com</a></p>
+            <p>📞 +48 725 064 909</p>
+        </div>
+        <div class="status-note">
+            <p>⚠️ <strong>Note:</strong> Currently traveling outside the EU. Phone availability limited – email contact preferred.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>Summary</h2>
+            <p>Treasury Analyst with over 3 years of experience at ADM Poznań, specializing in financial process automation and data integration. Proven track record in recovering hundreds of thousands of USD through forensic audits. Experienced in global banking consolidation (Citibank) and ISO 20022 migration. Skilled in using Python and Power Platform to build self-updating reporting systems.</p>
+        </section>
+
+        <section class="section">
+            <h2>Experience</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="title">Treasury Analyst / Automation Specialist</span>
+                    <span class="date">03.2022 – Present</span>
+                </div>
+                <p class="company">ADM (Archer Daniels Midland), Poznań</p>
+                <ul>
+                    <li>Recovered hundreds of thousands of USD by identifying unused accounts and errors in financial ledgers.</li>
+                    <li>Technical lead in consolidating newly acquired companies into the Citibank global platform.</li>
+                    <li>Developed automated Python scripts and Power BI reports for real-time cash visibility.</li>
+                    <li>Managed transition to CAMT.053 and performed compliance testing for PAIN.002 files across EMEA.</li>
+                    <li>Provided Forex operations support and Request to Pay (RtP) analysis for new banking partners.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="title">Junior Treasury Analyst</span>
+                    <span class="date">09.2021 – 03.2022</span>
+                </div>
+                <p class="company">ADM (Archer Daniels Midland)</p>
+                <ul>
+                    <li>Performed data reconciliation between multiple systems ensuring 100% consistency.</li>
+                    <li>Conduct audits of subsidiary accounts and closed redundant bank accounts to reduce fees.</li>
+                </ul>
+            </div>
+            </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-cat">
+                    <strong>Python:</strong> Pandas, NumPy, Watchdog, Logging
+                </div>
+                <div class="skill-cat">
+                    <strong>Data & BI:</strong> SQL, Power BI, ETL, Jupyter, NiFi, Spark
+                </div>
+                <div class="skill-cat">
+                    <strong>FinTech:</strong> ISO 20022 (CAMT, PAIN), MT940, FIS Trax/Quantum
+                </div>
+                <div class="skill-cat">
+                    <strong>Automation:</strong> Power Automate, VBA, Bash
+                </div>
+                <div class="skill-cat">
+                    <strong>Infrastructure:</strong> Ubuntu Server, Linux, Azure, Docker, Git
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Projects</h2>
+            <div class="item">
+                <p><strong>EDW Prototype:</strong> Developed ETL pipelines and SFTP connections for internal data orchestration using Ubuntu Server, Apache NiFi, Spark, and Metabase.</p>
+                <p><strong>Browser Game Bot:</strong> Reverse engineering project using Python and AI to automate communication logic via protocol analysis.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>Bachelor of Engineering: Applied Computer Science</span>
+                    <span>Expected Jan 2027</span>
+                </div>
+                <p>WSIiZ University, Rzeszów</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Volunteering & Languages</h2>
+            <p><strong>Volunteer Translator:</strong> Provided EN, UA, PL translation at the border (2022).</p>
+            <p><strong>Languages:</strong> English (B2), Ukrainian (B1), German (A2).</p>
+        </section>
+    </main>
+
+    <footer class="legal-footer">
+        <p>RODO: Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji.</p>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+        function toggleLang() {
+            alert('Funkcja zmiany języka wymaga przygotowania drugiej wersji tekstów.');
+        }
+    </script>
+</body>
+</html>
