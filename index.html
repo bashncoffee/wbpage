@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Kolasa - Interactive CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="lang-en">
+
+<div class="app-container">
+    <div class="toolbar no-print">
+        <div class="controls-group">
+            <button onclick="toggleLanguage()" class="btn">
+                <span id="lang-label">Switch to PL</span>
+            </button>
+            <button onclick="toggleTheme()" class="btn">
+                <span id="theme-label">Dark Mode</span>
+            </button>
+        </div>
+        <button onclick="generatePDF()" class="btn btn-primary">
+            📥 Export PDF (A4)
+        </button>
+    </div>
+
+    <div class="dashboard">
+        <aside class="sidebar">
+            <section class="identity">
+                <div class="avatar-box">DK</div>
+                <h1>Daniel Kolasa</h1>
+                <p class="subtitle" data-en="Treasury Analyst & Automation Specialist" data-pl="Analityk Treasury i Specjalista ds. Automatyzacji"></p>
+            </section>
+
+            <section class="contact-module">
+                <div class="c-item">📍 Poznań, Poland</div>
+                <div class="c-item">📞 +48 725 064 909</div>
+                <div class="c-item">✉️ daniel.kolasa@icloud.com</div>
+            </section>
+
+            <section class="sidebar-block">
+                <h3 data-en="Technical Stack" data-pl="Kompetencje Techniczne"></h3>
+                <div class="skill-category">
+                    <h4 data-en="Development" data-pl="Programowanie"></h4>
+                    <div class="tags">
+                        <span>Python</span><span>Pandas</span><span>NumPy</span><span>PyTorch</span><span>SQL</span><span>VBA</span><span>Bash</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 data-en="FinTech & Compliance" data-pl="FinTech i Compliance"></h4>
+                    <div class="tags">
+                        <span>OFAC</span><span>Sanctions Screening</span><span>ISO 20022</span><span>CAMT.053</span><span>FIS Trax</span><span>Quantum</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 data-en="Infrastructure" data-pl="Infrastruktura"></h4>
+                    <div class="tags">
+                        <span>Ubuntu Server</span><span>Docker</span><span>Azure</span><span>Git</span><span>NiFi</span><span>Spark</span><span>Metabase</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sidebar-block">
+                <h3 data-en="Languages" data-pl="Języki"></h3>
+                <div class="lang-row"><span>English</span><strong>B2</strong></div>
+                <div class="lang-row"><span>Ukrainian</span><strong>B1</strong></div>
+                <div class="lang-row"><span>German</span><strong>A2</strong></div>
+            </section>
+
+            <section class="sidebar-block">
+                <h3 data-en="Education" data-pl="Edukacja"></h3>
+                <div class="edu-item">
+                    <span class="year">2023 - 2027</span>
+                    <p><strong data-en="B.Eng. Applied Computer Science" data-pl="Inż. Informatyka Stosowana"></strong><br>WSIiZ Rzeszów</p>
+                </div>
+            </section>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-status">
+                <div class="badge" data-en="SYSTEM STATUS: AVAILABLE" data-pl="STATUS: DOSTĘPNY"></div>
+                <div class="notice">
+                    <strong data-en="Current Status:" data-pl="Aktualny status:"></strong> 
+                    <span data-en="Email preferred." data-pl="Preferowany e-mail."></span>
+                </div>
+            </header>
+
+            <section class="data-card">
+                <h2 data-en="Professional Profile" data-pl="Profil Zawodowy"></h2>
+                <p data-en="Treasury Analyst with over 3 years of experience. Expert in identifying and recovering dormant assets ($100k+). Specialized in ISO 20022 migrations and navigating OFAC/international sanctions frameworks to ensure capital liquidity in high-risk jurisdictions." 
+                   data-pl="Analityk Treasury z ponad 3-letnim doświadczeniem. Ekspert w identyfikacji i odzyskiwaniu zamrożonych aktywów ($100k+). Specjalista ds. migracji ISO 20022 oraz zarządzania płynnością w oparciu o regulacje OFAC i sankcje międzynarodowe."></p>
+            </section>
+
+            <section class="data-card">
+                <h2 data-en="Experience" data-pl="Doświadczenie"></h2>
+                
+                <div class="xp-row">
+                    <div class="xp-header">
+                        <h3 data-en="Treasury Analyst / Automation Specialist" data-pl="Treasury Analyst / Specjalista ds. Automatyzacji"></h3>
+                        <span>03.2022 – Present</span>
+                    </div>
+                    <p class="company">ADM (Archer Daniels Midland) • Poznań</p>
+                    <ul data-en-list="Sanctions Compliance: Managing capital flows and maintaining asset availability within OFAC and EU sanctioned jurisdictions.;Asset Recovery: Successfully restored over $100k in liquidity through auditing dormant accounts and unassigned funds.;M&A Integration: Technical lead for global Citibank consolidation.;Automation: Designed Python/NiFi pipelines for EMEA cash-flow reporting.;Compliance: UAT/SIT lead for FIS Trax/Quantum ISO 20022 upgrades."
+                        data-pl-list="Zgodność Sankcyjna: Zarządzanie przepływami kapitałowymi i utrzymanie dostępności aktywów w jurysdykcjach objętych sankcjami OFAC i UE.;Odzyskiwanie Aktywów: Skuteczne przywrócenie ponad $100k płynności poprzez audyt nieaktywnych kont i niewyjaśnionych środków.;Integracja M&A: Lider techniczny konsolidacji bankowej w Citibank.;Automatyzacja: Budowa procesów Python/NiFi dla raportowania EMEA.;Zgodność: Prowadzenie testów UAT/SIT migracji ISO 20022 (Trax/Quantum).">
+                    </ul>
+                </div>
+
+                <div class="xp-row">
+                    <div class="xp-header">
+                        <h3 data-en="Junior Treasury Analyst" data-pl="Młodszy Analityk Treasury"></h3>
+                        <span>09.2021 – 03.2022</span>
+                    </div>
+                    <p class="company">ADM • Poznań</p>
+                </div>
+            </section>
+
+            <section class="data-card">
+                <h2 data-en="Technical Projects" data-pl="Projekty Techniczne"></h2>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <strong data-en="Enterprise Data Warehouse Prototype" data-pl="Prototyp EDW"></strong>
+                        <p data-en="Financial data pipelines via Ubuntu, Spark, NiFi, and Metabase." data-pl="Pipeline'y danych finansowych oparte na Spark, NiFi i Metabase."></p>
+                    </div>
+                    <div class="project-item">
+                        <strong data-en="Network Protocol Automation" data-pl="Automatyzacja Protokołów"></strong>
+                        <p data-en="Reverse engineering of browser app protocols using Python/AI." data-pl="Reverse engineering protokołów aplikacji przy użyciu Python/AI."></p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="disclaimer">
+                <span data-en="I hereby give consent for my personal data to be processed for recruitment purposes." data-pl="Wyrażam zgodę na przetwarzanie danych osobowych dla potrzeb rekrutacji."></span>
+            </footer>
+        </main>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
