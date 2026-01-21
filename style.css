@@ -1,0 +1,116 @@
+:root {
+    --primary: #dc2626; /* Kolor z Twojego JSONa */
+    --bg: #ffffff;
+    --text: #000000;
+    --secondary-bg: #f4f4f5;
+}
+
+body.dark-mode {
+    --bg: #18181b;
+    --text: #f4f4f5;
+    --secondary-bg: #27272a;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Serif', serif; /* Z Twojego JSONa */
+    line-height: 1.5;
+    padding-top: 60px; /* Miejsce na pasek narzędzi */
+}
+
+/* Pasek narzędzi - wkomponowany i responsywny */
+.tool-bar {
+    position: fixed;
+    top: 0; width: 100%;
+    background: var(--bg);
+    border-bottom: 1px solid var(--secondary-bg);
+    z-index: 1000;
+    height: 50px;
+}
+
+.nav-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.nav-buttons button {
+    background: none;
+    border: 1px solid var(--primary);
+    color: var(--text);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-header {
+    text-align: center;
+    padding: 40px 0;
+    background: var(--secondary-bg);
+}
+
+.status-note {
+    background: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.section { margin-bottom: 30px; }
+h2 { border-bottom: 2px solid var(--primary); margin-bottom: 15px; }
+
+.item { margin-bottom: 20px; }
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.skill-cat {
+    padding: 10px;
+    background: var(--secondary-bg);
+    border-left: 4px solid var(--primary);
+}
+
+.legal-footer {
+    font-size: 0.7rem;
+    padding: 20px;
+    text-align: justify;
+    opacity: 0.7;
+}
+
+/* Responsywność dla iPhone'a */
+@media (max-width: 600px) {
+    .item-header span { width: 100%; display: block; }
+    .nav-logo { font-weight: bold; color: var(--primary); }
+    h1 { font-size: 1.8rem; }
+}
+
+/* Ukrywanie narzędzi przy druku */
+@media print {
+    .tool-bar { display: none; }
+    body { padding-top: 0; }
+}
